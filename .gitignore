@@ -1,0 +1,36 @@
+# Игнорируем виртуальное окружение
+venv/
+.env
+*.env
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Логи
+logs/
+*.log
+
+# SQLite база данных (если есть)
+*.sqlite3
+*.db
+
+# Конфигурационные файлы PyCharm
+.idea/
+
+# Файлы зависимостей
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Docker
+*.dockerfile
+docker-compose.yml
+
+# Исключаем файлы, создаваемые системой
+.DS_Store
+Thumbs.db
+
+# Файлы AI
+*.checkpoint
+*.model
