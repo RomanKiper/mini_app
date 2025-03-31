@@ -1,13 +1,18 @@
 import requests
-from bot.config import MISTRAL_API_KEY
+# from bot.config import MISTRAL_API_KEY
+from bot.config import load_config, Config
 
 API_URL = "https://api.mistral.ai/v1/chat/completions"  # Убедись, что URL правильный
+config: Config = load_config()
+mistral_api_key = config.tg_bot.mistral_api_key
 
 def get_mistral_response(user_message):
     headers = {
-        "Authorization": f"Bearer {MISTRAL_API_KEY}",
+        "Authorization": f"Bearer {mistral_api_key}",
         "Content-Type": "application/json"
     }
+
+    # bot = Bot(token=config.tg_bot.token)
 
     data = {
         "model": "mistral-medium",  # Попробуй этот вариант, если mistral-7b не работает

@@ -1,7 +1,7 @@
 from aiogram import Router, types
 from aiogram.filters import CommandStart
 from bot.mistral import get_mistral_response
-from bot.database import save_message
+# from bot.database import save_message
 
 router = Router()
 
@@ -20,7 +20,7 @@ async def chat_handler(message: types.Message):
     if not response or response is None:
         response = "Ошибка: модель не смогла обработать запрос."
 
-    save_message(message.from_user.id, user_text, response)  # Сохраняем в БД
+    # save_message(message.from_user.id, user_text, response)  # Сохраняем в БД
 
     await message.answer(response)
 

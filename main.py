@@ -1,20 +1,36 @@
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher
-from bot.config import BOT_TOKEN
+# from bot.config import BOT_TOKEN
+from bot.config import load_config, Config
 from bot.handlers import router
-from bot.database import init_db
+# from bot.database import init_db
+from data.engine import create_db, drop_db
+from bot.keyboards.main_menu import set_main_menu
+
+config: Config = load_config()
+
+async def on_startup(bot):
+    await drop_db()
+    await create_db()
+
+
+async def on_shutdown(bot):
+    print('Бот лег!')
+
 
 async def main():
     logging.basicConfig(level=logging.INFO)
-    bot = Bot(token=BOT_TOKEN)
+    bot = Bot(token=config.tg_bot.token)
     dp = Dispatcher()
 
     dp.include_router(router)  # Подключаем рутеры
 
-    init_db()  # Инициализируем базу данных при запуске
-
-    await bot.send_message(chat_id="1006569664", text="✅ Бот запущен!")  # Уведомление о запуске
+    # init_db()  # Инициализируем базу данных при запуске
+    dp.startup.register(on_startup)
+    dp.shutdown.register(on_shutdown)
+    await set_main_menu(bot)
+    await bot.send_message(config.tg_bot.id_admin, text='Бот запущен!')
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
