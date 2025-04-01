@@ -11,7 +11,7 @@ from bot.keyboards.main_menu import set_main_menu
 config: Config = load_config()
 
 async def on_startup(bot):
-    await drop_db()
+    # await drop_db()
     await create_db()
 
 

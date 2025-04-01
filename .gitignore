@@ -34,3 +34,9 @@ Thumbs.db
 # Файлы AI
 *.checkpoint
 *.model
+
+BOT_TOKEN=8194419796:AAHpmoWGLv9My2uh4Zmtk8HluKNd98Z30-c
+MISTRAL_API_KEY=MZGiT1OfYt0ypGOZeAwMIDy7C4bmC1xA
+DB_LITE=sqlite+aiosqlite:///my_base.db
+ID_MAIN_ADMIN=1006569664
+ID_ADMINS=1006569664, 6625770047
