@@ -2,10 +2,10 @@ import asyncio
 import logging
 from aiogram import Bot, Dispatcher
 # from bot.config import BOT_TOKEN
-from bot.config import load_config, Config
-from bot.handlers import router
+from data.config import load_config, Config
+from bot.handlers.handlers import router
 # from bot.database import init_db
-from data.engine import create_db, drop_db, session_maker
+from data.engine import create_db, session_maker
 from bot.keyboards.main_menu import set_main_menu
 from middlewares.db import DataBaseSession
 

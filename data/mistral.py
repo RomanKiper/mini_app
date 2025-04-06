@@ -1,6 +1,5 @@
 import requests
-# from bot.config import MISTRAL_API_KEY
-from bot.config import load_config, Config
+from data.config import load_config, Config
 
 API_URL = "https://api.mistral.ai/v1/chat/completions"  # Убедись, что URL правильный
 config: Config = load_config()
@@ -12,7 +11,6 @@ def get_mistral_response(user_message):
         "Content-Type": "application/json"
     }
 
-    # bot = Bot(token=config.tg_bot.token)
 
     data = {
         "model": "mistral-medium",  # Попробуй этот вариант, если mistral-7b не работает
