@@ -1,4 +1,4 @@
-# Компания ЗАО Сливки Бай
+`# Компания ЗАО Сливки Бай
 
 
 ## О компании. 
@@ -44,7 +44,7 @@ Slivkiby - это топовый канал в инстаграм с самым 
 * 460 000 подписчиков.
 * 200 000+ охват поста в ленте.
 * 55 000+ просмотров видеоистории в сутки.
-* Ссылка на канал www.instagram.com/slivkiby/
+* Ссылка на канал https://www.instagram.com/slivkiby/
  * **Стоимость размещения:**
 * Видеообзор(сторис 24 ч.) - 1998 руб.
 * Пост(рилс) - 4998 руб.
@@ -53,7 +53,7 @@ Slivkiby - это топовый канал в инстаграм с самым 
 
 ### Канал в инстаграм Зроблена ў Беларусi характеристики и стоимость размещения.
 Профессиональные обзоры топовых блогеров Беларуси на заводы, торговые сети, продукты питания.
-* 155 000 подписчиков.
+* 162 000 подписчиков.
 * 100 000+ охват поста в ленте.
 * 25 000+ просмотров видеоистории в сутки.
 * Ссылка на канал https://www.instagram.com/zroblena_belarus/
@@ -68,7 +68,7 @@ Slivkiby - это топовый канал в инстаграм с самым 
 * 24 000 подписчиков.
 * 30 000+ охват поста в ленте.
 * 20 000+ просмотров видеоистории в сутки.
-* Ссылка на канал www.instagram.com/slivkiby_beauty/
+* Ссылка на канал https://www.instagram.com/slivkiby_beauty/
  * **Стоимость размещения:**
 * Видеообзор(сторис 24 ч.) - 398 руб.
 * Пост(рилс) - 598 руб.
@@ -80,7 +80,7 @@ Slivkiby - это топовый канал в инстаграм с самым 
 * 160 000 подписчиков.
 * 100 000+ охват поста в ленте.
 * 25 000+ просмотров видеоистории в сутки.
-* Ссылка на канал www.instagram.com/revizor_belarus/
+* Ссылка на канал https://www.instagram.com/revizor_belarus/
  * **Стоимость размещения:**
 * Видеообзор(сторис 24 ч.) - 998 руб.
 * Пост(рилс) - 1298 руб.
@@ -267,36 +267,37 @@ Slivkiby - это топовый канал в инстаграм с самым 
 ## Ссылки на сайт и каналы в социальных сетях. 
 
 ### Ссылки на каналы TikTok:
-- www.tiktok.com/@slivkiby
-- www.tiktok.com/@slivkiby_brest
-- www.tiktok.com/@slivkiby_vitebsk
-- www.tiktok.com/@slivkiby_grodno
-- www.tiktok.com/@slivkiby_gomel
-- www.tiktok.com/@slivkimogilev
-- www.tiktok.com/@slivkiby_bobruysk
-- www.tiktok.com/@slivkiby_borisov
-- www.tiktok.com/@slivkiby_baranovichi
-- www.tiktok.com/@slivkiby_pinsk
-- www.tiktok.com/@slivkiby_svetlogorsk
-- www.tiktok.com/@slivkiby_orsha
+- https://www.tiktok.com/@slivkiby
+- https://www.tiktok.com/@slivkiby_brest
+- https://www.tiktok.com/@slivkiby_vitebsk
+- https://www.tiktok.com/@slivkiby_grodno
+- https://www.tiktok.com/@slivkiby_gomel
+- https://www.tiktok.com/@slivkimogilev
+- https://www.tiktok.com/@slivkiby_bobruysk
+- https://www.tiktok.com/@slivkiby_borisov
+- https://www.tiktok.com/@slivkiby_baranovichi
+- https://www.tiktok.com/@slivkiby_pinsk
+- https://www.tiktok.com/@slivkiby_svetlogorsk
+- https://www.tiktok.com/@slivkiby_orsha
 
 ### Ссылки на каналы Instagram:
-- www.instagram.com/slivkiby
-- www.instagram.com/revizor_belarus/
-- www.instagram.com/zroblena_belarus/
-- www.instagram.com/slivkiby_beauty
-- www.instagram.com/slivkiby_brest
-- www.instagram.com/slivkiby_gomel
-- www.instagram.com/slivkiby_mogilev
-- www.instagram.com/slivki_grodno
-- www.instagram.com/slivkiby_vitebsk
-- www.instagram.com/slivkiby_svetlogorsk
-- www.instagram.com/slivkiby_pinsk
-- www.instagram.com/slivkiby_bobruisk
-- www.instagram.com/slivki_baranovichi
-- www.instagram.com/slivki_borisov
-- www.instagram.com/slivkiby_orsha
-- www.instagram.com/akcii_skidki_belarus
+- https://www.instagram.com/slivkiby
+- https://www.instagram.com/revizor_belarus/
+- https://www.instagram.com/zroblena_belarus/
+- https://www.instagram.com/slivkiby_beauty
+- https://www.instagram.com/slivkiby_brest
+- https://www.instagram.com/slivkiby_gomel
+- https://www.instagram.com/slivkiby_mogilev
+- https://www.instagram.com/slivki_grodno
+- https://www.instagram.com/slivkiby_vitebsk
+- https://www.instagram.com/slivkiby_svetlogorsk
+- https://www.instagram.com/slivkiby_pinsk
+- https://www.instagram.com/slivkiby_bobruisk
+- https://www.instagram.com/slivki_baranovichi
+- https://www.instagram.com/slivki_borisov
+- https://www.instagram.com/slivkiby_orsha
+
+[//]: # (- www.instagram.com/akcii_skidki_belarus)
 
 ### Ссылки на каналы Telegram:
 - https://t.me/slivki_by
@@ -311,3 +312,5 @@ Slivkiby - это топовый канал в инстаграм с самым 
 
 За помощью по администрированию данного телеграм бота можно обратиться к Кипер Роману.
 Его номер телефона +375291514191
+@RomanKiper
+`
