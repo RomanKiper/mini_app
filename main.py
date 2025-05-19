@@ -43,7 +43,7 @@ async def main():
     dp.shutdown.register(on_shutdown)
 
     await set_main_menu(bot)
-    await bot.send_message(config.tg_bot.id_admin, text='Бот запущен')
+    # await bot.send_message(config.tg_bot.id_admin, text='Бот запущен')
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
