@@ -1,6 +1,5 @@
 LEXICON_COMMANDS: dict[str, str] = {
     '/start': 'Старт бота',
-    '/admin': 'АДМИНКА',
+    '/mini_app': 'mini_app',
 }
 
-#11111111111111111
