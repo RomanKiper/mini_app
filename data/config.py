@@ -1,9 +1,4 @@
-
 DB_PATH = "data/bot.db"
-
-from dataclasses import dataclass
-from environs import Env
-
 
 # data/config.py
 from dataclasses import dataclass

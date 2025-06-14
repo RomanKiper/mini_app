@@ -1,8 +1,7 @@
-from sqlalchemy import select, update, delete
+from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.orm import joinedload
-
-from data.models import User
+from data.models import User, Category, Product
+from typing import List
 
 
 async def orm_add_user(
@@ -20,3 +19,16 @@ async def orm_add_user(
             User(user_id=user_id, first_name=first_name, last_name=last_name, phone=phone, username=username)
         )
         await session.commit()
+
+
+
+
+async def orm_get_categories(session: AsyncSession) -> List[Category]:
+    """
+    Получить все категории из базы.
+
+    :param session: асинхронная сессия SQLAlchemy
+    :return: список экземпляров Category
+    """
+    result = await session.execute(select(Category))
+    return result.scalars().all()

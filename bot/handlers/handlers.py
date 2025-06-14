@@ -24,7 +24,7 @@ async def start_handler(message: types.Message, session: AsyncSession):
 
 
 @router.message(F.text == "/mini_app")
-async def start_handler(message: Message):
+async def start_miniapp_handler(message: Message):
     web_app_btn = InlineKeyboardButton(
         text="Открыть Mini App",
         web_app=WebAppInfo(url="https://miniminimini.serveo.net/mini_app")

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+Меню
+{% endblock %}
+
+{% block header %}
+Категории блюд
+{% endblock %}
+
+{% block main_content %}
+  {% for category in categories %}
+    <div class="btn">{{ category.name }}</div>
+  {% else %}
+    <p>Категории не найдены.</p>
+  {% endfor %}
+{% endblock %}

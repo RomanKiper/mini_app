@@ -1,11 +1,10 @@
 import asyncio
 import logging
-
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
-
 from data.config import load_config, Config
 from bot.handlers.handlers import router
+from bot.handlers.private_handlers import admin_private_router
 from data.engine import create_db, session_maker
 from bot.keyboards.main_menu import set_main_menu
 from middlewares.db import DataBaseSession
@@ -22,7 +21,10 @@ from admin.admin_panel import setup_admin
 setup_admin(fastapi_app)
 
 
-config: Config = load_config()
+# config: Config = load_config()
+
+config: Config = load_config(".env")
+
 
 async def on_startup(bot: Bot):
     await create_db()
@@ -38,6 +40,7 @@ async def start_bot():
 
     # подключаем хендлеры и middleware
     dp.include_router(router)
+    dp.include_router(admin_private_router)
     dp.update.middleware(DataBaseSession(session_pool=session_maker))
     dp.startup.register(on_startup)
     dp.shutdown.register(on_shutdown)
