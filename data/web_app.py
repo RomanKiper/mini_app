@@ -40,13 +40,11 @@ async def get_menu(request: Request, session: AsyncSession = Depends(get_async_s
     try:
         # Получаем категории
         categories = await orm_get_categories(session)
-        print("Категории:", categories)
 
         return templates.TemplateResponse("menu_category.html", {
             "request": request,
             "categories": categories
         })
-
     except Exception as e:
         print(f"❌ Ошибка при получении категорий: {e}")
         return HTMLResponse(content=f"<h1>Ошибка: {e}</h1>", status_code=500)

@@ -6,6 +6,7 @@ from sqlalchemy import create_engine
 from data.models import User, Category, Product, Base  # важно импортировать Base!
 from data.config import load_config
 
+
 # Загружаем конфиг и получаем строку подключения
 config = load_config()
 
@@ -45,3 +46,9 @@ def setup_admin(app: FastAPI):
     admin.add_view(UserAdmin)
     admin.add_view(CategoryAdmin)
     admin.add_view(ProductAdmin)
+
+
+
+
+
+

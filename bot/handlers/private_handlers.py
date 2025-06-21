@@ -1,6 +1,6 @@
 
 
-from sqlalchemy.ext.asyncio import AsyncSession
+from bot.lexicon.lexicon import TUNEL_URL
 from aiogram import Router, F
 from aiogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
 from filters.is_admin import IsAdminMsg
@@ -16,7 +16,7 @@ admin_private_router.callback_query.filter(IsAdminMsg())
 async def start_admin(message: Message):
     web_app_btn = InlineKeyboardButton(
         text="Открыть админку",
-        web_app=WebAppInfo(url="https://miniminimini.serveo.net/admin")
+        web_app=WebAppInfo(url=f"{TUNEL_URL}/admin")
     )
     kb = InlineKeyboardMarkup(inline_keyboard=[[web_app_btn]])
     await message.answer(

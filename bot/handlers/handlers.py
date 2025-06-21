@@ -5,6 +5,7 @@ from data.orm_query import orm_add_user
 from sqlalchemy.ext.asyncio import AsyncSession
 from aiogram import Router, F
 from aiogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
+from bot.lexicon.lexicon import TUNEL_URL
 
 
 router = Router()
@@ -27,7 +28,8 @@ async def start_handler(message: types.Message, session: AsyncSession):
 async def start_miniapp_handler(message: Message):
     web_app_btn = InlineKeyboardButton(
         text="Открыть Mini App",
-        web_app=WebAppInfo(url="https://miniminimini.serveo.net/mini_app")
+        # web_app=WebAppInfo(url="https://miniminimini.serveo.net/mini_app")
+        web_app=WebAppInfo(url=f"{TUNEL_URL}/mini_app")
 
     )
     kb = InlineKeyboardMarkup(inline_keyboard=[[web_app_btn]])
