@@ -1,6 +1,7 @@
 import json
 from sqlalchemy import String, Float, Text, DateTime, func, ForeignKey, Numeric, BigInteger
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+from typing import List
 
 
 from datetime import datetime
@@ -25,14 +26,20 @@ class User(Base):
         return self.username
 
 
+
 class Category(Base):
     __tablename__ = 'category'
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
-    name: Mapped[str] = mapped_column(String(150), nullable=False)
+    name: Mapped[str] = mapped_column(String(100), nullable=False)
+    created: Mapped[datetime] = mapped_column(default=datetime.utcnow)
+    updated: Mapped[datetime] = mapped_column(default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    products: Mapped[List["Product"]] = relationship(back_populates="category")
 
     def __str__(self):
         return self.name
+
 
 
 class Product(Base):
@@ -42,10 +49,9 @@ class Product(Base):
     name: Mapped[str] = mapped_column(String(150), nullable=False)
     description: Mapped[str] = mapped_column(Text)
     price: Mapped[float] = mapped_column(Numeric(5,2), nullable=False)
-    # image: Mapped[str] = mapped_column(String(150))
     category_id: Mapped[int] = mapped_column(ForeignKey('category.id', ondelete='CASCADE'), nullable=False)
-    # user_id: Mapped[int] = mapped_column(ForeignKey('user.user_id', ondelete='CASCADE'), nullable=False)
 
-    category: Mapped['Category'] = relationship(backref='product')
+    category: Mapped["Category"] = relationship(back_populates="products")
+
     # user: Mapped['User'] = relationship(backref='product')
 

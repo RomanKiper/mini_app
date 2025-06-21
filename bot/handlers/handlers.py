@@ -30,7 +30,6 @@ async def start_miniapp_handler(message: Message):
         text="Открыть Mini App",
         # web_app=WebAppInfo(url="https://miniminimini.serveo.net/mini_app")
         web_app=WebAppInfo(url=f"{TUNEL_URL}/mini_app")
-
     )
     kb = InlineKeyboardMarkup(inline_keyboard=[[web_app_btn]])
     await message.answer(

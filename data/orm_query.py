@@ -21,14 +21,12 @@ async def orm_add_user(
         await session.commit()
 
 
-
-
 async def orm_get_categories(session: AsyncSession) -> List[Category]:
-    """
-    Получить все категории из базы.
-
-    :param session: асинхронная сессия SQLAlchemy
-    :return: список экземпляров Category
-    """
     result = await session.execute(select(Category))
+    return result.scalars().all()
+
+
+async def orm_get_products_by_category(category_id: int, session: AsyncSession) -> List[Product]:
+    stmt = select(Product).where(Product.category_id == category_id)
+    result = await session.execute(stmt)
     return result.scalars().all()

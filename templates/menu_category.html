@@ -10,7 +10,9 @@
 
 {% block main_content %}
   {% for category in categories %}
-    <div class="btn">{{ category.name }}</div>
+    <a href="/menu/{{ category.id }}">
+      <div class="btn">{{ category.name }}</div>
+    </a>
   {% else %}
     <p>Категории не найдены.</p>
   {% endfor %}

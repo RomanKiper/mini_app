@@ -1,0 +1,18 @@
+<!-- templates/product.html -->
+{% extends "base.html" %}
+{% block main_content %}
+  <h2>Продукты</h2>
+  {% if products %}
+    <ul>
+      {% for product in products %}
+        <li>
+          <strong>{{ product.name }}</strong><br>
+          {{ product.description }}<br>
+          <em>Цена: {{ product.price }} руб.</em>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Продукты не найдены.</p>
+  {% endif %}
+{% endblock %}
